@@ -9,6 +9,7 @@ repos:
       -   id: flake8
           entry: pflake8
           additional_dependencies: [ pyproject-flake8 ]
+      -   id: check-yaml
 -   repo: local
     hooks:
       -   id: test
