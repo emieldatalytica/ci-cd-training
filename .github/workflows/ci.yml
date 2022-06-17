@@ -45,7 +45,7 @@ jobs:
           python-version: 3.9
 
       - name: Install Python dependencies
-        run: pip install pytest==7.1.2
+        run: if [ -f tests/requirements.txt ]; then pip install -r tests/requirements.txt; fip
 
       - name: Run tests
         run: make test
