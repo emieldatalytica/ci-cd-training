@@ -20,9 +20,8 @@ clean-test:  ## Remove test and coverage artifacts.
 
 .PHONY: lint
 lint:
-	pflake8
+	flake8 src
 
 .PHONY: black
 black:
-	python -m black --version
-	python -m black
+	python -m black src
