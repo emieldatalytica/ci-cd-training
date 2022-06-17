@@ -9,3 +9,10 @@ repos:
       -   id: flake8
           entry: pflake8
           additional_dependencies: [ pyproject-flake8 ]
+-   repo: local
+    hooks:
+      -   id: test
+          name: test
+          entry: make test
+          language: system
+          types: [python]
