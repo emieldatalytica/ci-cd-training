@@ -18,7 +18,7 @@ clean-test:  ## Remove test and coverage artifacts.
 	rm -fr htmlcov/ .junit/
 	rm -fr .pytest_cache
 
-.PHONY: lint
+.PHONY: lint  ## Note: some stuff is disabled for training purposes that you would normally enable
 lint:
 	flake8 src
 
