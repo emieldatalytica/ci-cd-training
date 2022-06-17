@@ -1,0 +1,32 @@
+name: Auto-format and lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+
+      - name: Install Python dependencies
+        run: pip install black flake8 pyproject-flake8==0.0.1a2
+
+      - name: Run black
+        run: make black
+
+      - name: Run flake8
+        run: make lint
