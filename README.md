@@ -1,4 +1,4 @@
-[![CI_CD](https://github.com/emieldatalytica/ci-cd-training/actions/workflows/ci.yml/badge.svg)](https://github.com/emieldatalytica/ci-cd-training/actions/workflows/ci.yml)
+[![CI](https://github.com/emieldatalytica/ci-cd-training/actions/workflows/ci.yml/badge.svg)](https://github.com/emieldatalytica/ci-cd-training/actions/workflows/ci.yml)
 
 
 # Vantage CI/CD training
