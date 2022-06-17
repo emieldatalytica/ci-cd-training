@@ -3,13 +3,13 @@ repos:
     hooks:
       -   id: black
           name: black
-          entry: pipenv run black
+          entry: make lint
           language: system
           types: [python]
 
       -   id: flake8
           name: Flake8
-          entry: pipenv run flake8
+          entry: make lint
           language: system
           types: [python]
 
