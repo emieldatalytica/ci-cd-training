@@ -17,3 +17,12 @@ clean-test:  ## Remove test and coverage artifacts.
 	rm -f .coverage coverage.xml
 	rm -fr htmlcov/ .junit/
 	rm -fr .pytest_cache
+
+.PHONY: lint
+lint:
+	pflake8
+
+.PHONY: black
+black:
+	python -m black --version
+	python -m black
